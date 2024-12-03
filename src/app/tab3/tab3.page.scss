@@ -1,0 +1,35 @@
+ion-card {
+  margin-bottom: 16px;
+}
+  
+ion-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+  
+ion-item {
+  margin-bottom: 8px;
+}
+  
+ion-button[color="danger"] {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.sair-container {
+  display: flex;
+  justify-content: center; /* Centraliza o botão horizontalmente */
+  margin-top: 16px; /* Espaço acima do botão */
+}
+  
+.sair-button {
+  width: auto; /* Ajusta a largura do botão ao tamanho do texto */
+  padding: 0 150px; /* Adiciona espaçamento lateral */
+  height: 40px; /* Define uma altura específica */
+  font-size: 14px; /* Ajusta o tamanho do texto */
+  line-height: 40px; /* Alinha verticalmente o texto no botão */
+  border-radius: 50px; /* Bordas arredondadas */
+}
+  
+  
+  

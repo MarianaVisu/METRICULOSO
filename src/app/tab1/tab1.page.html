@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Calculadora de IMC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Calcular IMC</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Calcular IMC</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Peso (kg)</ion-label>
+        <ion-input [(ngModel)]="peso" type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Altura (cm)</ion-label>
+        <ion-input [(ngModel)]="altura" type="number"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="calcularIMC()">Calcular IMC</ion-button>
+      <div *ngIf="resultado">
+        <p>Seu IMC é: <strong>{{ resultado }}</strong></p>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Histórico</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let registro of historico">
+          Peso: {{ registro.peso }} kg, Altura: {{ registro.altura }} cm, IMC: {{ registro.imc }}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

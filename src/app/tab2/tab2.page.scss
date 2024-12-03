@@ -1,0 +1,53 @@
+.info-section {
+    padding: 10px 0;
+  
+    h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0;
+    }
+  
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+      margin: 5px 0;
+    }
+  
+    p {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 5px 0 0;
+    }
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+  }
+  
+  .title.baixo-peso {
+    color: #008000; /* Verde escuro */
+  }
+  
+  .title.normal {
+    color: #32cd32; /* Verde claro */
+  }
+  
+  .title.sobrepeso {
+    color: #ffa500; /* Laranja */
+  }
+  
+  .title.obesidade1 {
+    color: #ff8c00; /* Laranja escuro */
+  }
+  
+  .title.obesidade2 {
+    color: #ff4500; /* Vermelho escuro */
+  }
+  
+  .title.obesidade3 {
+    color: #dc143c; /* Vermelho intenso */
+  }
+  

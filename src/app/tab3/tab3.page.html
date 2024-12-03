@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Minha conta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Dados da Conta</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label><strong>Nome:</strong></ion-label>
+          <ion-text>{{ usuario.nome }}</ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-label><strong>Email:</strong></ion-label>
+          <ion-text>{{ usuario.email }}</ion-text>
+        </ion-item>
+        <ion-item>
+          <ion-label><strong>Senha:</strong></ion-label>
+          <ion-text>{{ usuario.senha }}</ion-text>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Alterar Dados da Conta</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="block">Alterar</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="sair-container">
+    <ion-button fill="solid" color="danger" class="sair-button" (click)="sair()">Sair</ion-button>
+  </div>    
+</ion-content>

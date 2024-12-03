@@ -1,0 +1,39 @@
+.home-content {
+    text-align: center;
+    padding: 16px; /* Adiciona margem interna ao conteúdo */
+
+    .title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 16px; /* Espaço abaixo do título */
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0; /* Espaço acima e abaixo da imagem */
+
+        img {
+            max-width: 250px;
+            height: auto;
+        }
+    }
+
+    .intro-text {
+        text-align: center;
+        font-size: 1rem;
+        margin: 50px 0; /* Espaço acima e abaixo do texto */
+    }
+
+    ion-button {
+        display: block;
+        margin: 0 auto; /* Centraliza o botão horizontalmente */
+    }
+}
+
+/* Estilo para limitar a largura do conteúdo e adicionar margens laterais */
+.page-container {
+    max-width: 560px; /* Limita a largura da página */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+  

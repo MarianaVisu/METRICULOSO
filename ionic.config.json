@@ -1,0 +1,7 @@
+{
+  "name": "METRICULOSO",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
